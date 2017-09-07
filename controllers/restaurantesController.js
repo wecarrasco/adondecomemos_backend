@@ -8,15 +8,8 @@ exports.getRestaurantes = {
   // },
   handler: function(request, reply){
     var restaurantes = restaurante.find({}, function(err, rest){
-      //console.log(typeof rest[0]);
-      //var rest2 = rest[0];
-      //var rest2 = JSON.parse(rest[0])
-      //console.log(rest2["Nombre"]);
       reply(restaurantes);
     });
-    //var rest = JSON.parse(restaurantes);
-    //console.log(rest[0].Nombre);
-
   }
 }
 

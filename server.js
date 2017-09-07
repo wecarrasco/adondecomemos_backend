@@ -21,7 +21,7 @@ server.ext('onPreResponse', corsHeaders)
 //   }
 // });
 
-mongoose.connect('mongodb://admin:admin@ds159033.mlab.com:59033/dondecomemos');
+mongoose.connect('mongodb://admin:admin@ds123124.mlab.com:23124/dondecomemosv2');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
